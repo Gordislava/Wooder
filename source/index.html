@@ -3,10 +3,254 @@
   <head>
     <meta charset="utf-8">
     <title>Wooder</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__container">
+        <a href="" class="logo">
+          <img src="" alt="">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Услуги</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Наши работы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Преимущества</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Достижения</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="slider">
+        <div class="slider__item">
+          <h1 class="slider__title">Wooder</h1>
+          <button class="button button__more button__slide">Читать больше</button>
+        </div>
+      </section>
+      <section class="product">
+        <div class="product__item product__item--left product__item--first">
+          <img src="img/furniture.jpg" alt="" class="product__img product__img--first">
+          <div class="product__text product__text--left">
+            <h2 class="product__title product__title--left">Furniture</h2>
+            <p class="product__descr product__descr--left">Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made
+            of reclaimed barnwood</p>
+            <a href="#" class="product__button">Learn more</a>
+            <p class="product__number product__number--left">01 <span>.</span></p>
+          </div>
+        </div>
+        <div class="product__item product__item--right product__item--second">
+          <img src="img/decor.jpg" alt="" class="product__img product__img--second">
+          <div class="product__text product__text--right">
+            <h2 class="product__title product__title--right">Decor</h2>
+            <p class="product__descr product__descr--right">We make all types of wooden decor as per design given by Architect,Interior designer, contractor which is suitable your premises.</p>
+            <a href="#" class="product__button product__button--right">Learn more</a>
+            <p class="product__number product__number--right">02 <span>.</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="gallery-section">
+        <h1 class="gallery-section__title">Наши работы</h1>
+        <div class="gallery-section__filter">
+          <ul class="gallery-section__filter-list">
+            <li class="gallery-section__filter-item" data-filter="all">Показать все</li>
+            <li class="gallery-section__filter-item" data-filter="1">Тканевые</li>
+            <li class="gallery-section__filter-item" data-filter="2">Глянцевые</li>
+            <li class="gallery-section__filter-item" data-filter="3">Матовые</li>
+            <li class="gallery-section__filter-item" data-filter="4">Резные</li>
+            <li class="gallery-section__filter-item" data-filter="4">С подсветкой</li>
+            <li class="gallery-section__filter-item" data-filter="5">Многоуровневые</li>
+          </ul>
+        </div>
+        <section class="gallery">
+          <div class="gallery__container">
+            <ul class="gallery__list filtr-container">
+              <li class="gallery__item filtr-item" data-category='1' data-sort="value">
+                <img class="gallery__img" src="img/gallery1.jpg">
+                <div class="gallery__hover">
+                  <a class="gallery__link" href="#">
+                    <h3>Строительство коттеджа</h3>
+                    <p>Под ключ</p>
+                  </a>
+                </div>
+              </li>
+              <li class="gallery__item filtr-item" data-category='2' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery2.jpg">
+                  <div class="gallery__hover">
+                    <h3>Электромонтажные работы</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='2' data-sort="value">
+                <img class="gallery__img" src="img/gallery3.jpg">
+                <div class="gallery__hover">
+                  <a class="gallery__link" href="#"></a>
+                  <h3>Строительство коттеджа</h3>
+                  <p>Под ключ</p>
+                  </a>
+                </div>
+              </li>
+              <li class="gallery__item filtr-item" data-category='3' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery4.jpg">
+                  <div class="gallery__hover">
+                    <h3>Фасадные работы</h3>
+                    <p>Под ключ</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='5' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery5.jpg">
+                  <div class="gallery__hover">
+                    <h3>Монтаж кондиционеров</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='4' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery6.jpg">
+                  <div class="gallery__hover">
+                    <h3>Строительство коттеджа</h3>
+                    <p>Под ключ</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='3' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery7.jpg">
+                  <div class="gallery__hover">
+                    <h3>Фасадные работы</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='4' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery8.jpg">
+                  <div class="gallery__hover">
+                    <h3>Строительство коттеджа</h3>
+                    <p>Под ключ</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='5' data-sort="value">
+                <img class="gallery__img" src="img/gallery3.jpg">
+                <div class="gallery__hover">
+                  <a class="gallery__link" href="#"></a>
+                  <h3>Строительство коттеджа</h3>
+                  <p>Под ключ</p>
+                  </a>
+                </div>
+              </li>
+              <li class="gallery__item filtr-item" data-category='5' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery4.jpg">
+                  <div class="gallery__hover">
+                    <h3>Фасадные работы</h3>
+                    <p>Под ключ</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='3' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery5.jpg">
+                  <div class="gallery__hover">
+                    <h3>Монтаж кондиционеров</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='3' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery6.jpg">
+                  <div class="gallery__hover">
+                    <h3>Строительство коттеджа</h3>
+                    <p>Под ключ</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='2, 3' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery4.jpg">
+                  <div class="gallery__hover">
+                    <h3>Фасадные работы</h3>
+                    <p>Под ключ</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='4, 1' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery5.jpg">
+                  <div class="gallery__hover">
+                    <h3>Монтаж кондиционеров</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='2, 1' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery6.jpg">
+                  <div class="gallery__hover">
+                    <h3>Строительство коттеджа</h3>
+                    <p>Под ключ</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery__item filtr-item" data-category='4, 5' data-sort="value">
+                <a class="gallery__link" href="#">
+                  <img class="gallery__img" src="img/gallery7.jpg">
+                  <div class="gallery__hover">
+                    <h3>Фасадные работы</h3>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <section class="about">
+        <img src="img/about.png" alt="" class="about__img">
+        <div class="about__text">
+          <h2 class="about__title">О нас</h2>
+          <p class="about__descr">We are a team of professionals in the wood processing and the creation of wooden furniture of the highest class</p>
+          <a href="#" class="about__button product__button">Learn more</a>
+        </div>
+      </section>
+      <section class="features">
+        <h2 class="features__title">Wooder - is quality</h2>
+        <p class="features__text">We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.</p>
+        <ul class="features__list">
+          <li class="features__item">
+            <img src="img/features1.png" alt="" class="features__img">
+            <p class="features__descr">Innovative Design</p>
+          </li>
+          <li class="features__item">
+            <img src="img/features2.png" alt="" class="features__img">
+            <p class="features__descr">High-level Skills</p>
+          </li>
+          <li class="features__item">
+            <img src="img/features3.png" alt="" class="features__img">
+            <p class="features__descr">Quality Products</p>
+          </li>
+        </ul>
+      </section>
 
-    <p>Wooder</p>
-
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.filterizr.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

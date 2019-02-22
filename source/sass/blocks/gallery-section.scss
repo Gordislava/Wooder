@@ -1,0 +1,59 @@
+.gallery-section {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery-section__filter {
+  width: 61%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.gallery-section__title {
+
+  @include title;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.gallery-section__title::after {
+  @include pseudo;
+  width: 51px;
+  height: 4px;
+  background-color: $accent-dark;
+  bottom: 0;
+  left: 50%;
+  margin-left: -51px;
+}
+
+.gallery-section__filter-list {
+  @include list-norm;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.gallery-section__filter-item {
+  @include text;
+  text-transform: uppercase;
+  padding: 12px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $title-dark;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+.gallery-section__filter--active {
+  color: $title-dark;
+  cursor: pointer;
+}

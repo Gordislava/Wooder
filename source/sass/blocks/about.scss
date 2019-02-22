@@ -1,0 +1,59 @@
+.about {
+  width: 100%;
+  max-width: 1198px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.about__img {
+  width: 49.2%;
+  max-width: 588px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.about__text {
+  width: 27%;
+  max-width: 330px;
+  margin: 0;
+  text-align: left;
+  margin-left: 95px;
+}
+
+
+
+.about__title {
+  @include title;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.about__title::before {
+  @include pseudo;
+  width: 151px;
+  height: 1px;
+  background-color: $title-dark;
+  left: -183px;
+  top: 50%;
+}
+
+.about__descr {
+  @include text;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.about__descr::before {
+  @include pseudo;
+  width: 44px;
+  height: 4px;
+  background-color: $accent-dark;
+  left: -75px;
+  top: 10%;
+}

@@ -1,0 +1,39 @@
+@mixin list-norm {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin title {
+  font: {
+    weight: 700;
+    size: 48px;
+  }
+  color: $title-color;
+  line-height: 100px;
+  text-transform: uppercase;
+  letter-spacing: 3.4px;
+}
+
+@mixin text {
+  font: {
+    weight: 400;
+    size: 15px;
+  }
+  color: $text-color;
+  line-height: 25px;
+  letter-spacing: 0.4px;
+}
+
+@mixin pseudo {
+  position: absolute;
+  content: "";
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1478px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

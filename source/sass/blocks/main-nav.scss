@@ -1,0 +1,30 @@
+.main-nav {
+  width: 55%;
+  max-width: 816px;
+}
+
+.main-nav__list {
+  @include list-norm;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding: 15px 0;
+}
+
+.main-nav__link {
+  font: {
+    family: 'ProximaNova', 'Arial', sans-serif;
+    weight: 400;
+    size: 15px;
+  }
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 27px;
+  letter-spacing: 0.4px;
+
+  &:hover,
+  &:active {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
