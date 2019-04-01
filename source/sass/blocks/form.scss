@@ -1,0 +1,111 @@
+.form {
+  width: 100%;
+  background-color: $title-color;
+  background-image: url('../../img/bgr-form.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.form::before {
+  @include pseudo;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.form__wrapper {
+  box-sizing: border-box;
+  width: 71%;
+  max-width: 1294px;
+  margin: 0 auto;
+  border: 1px solid $accent-dark;
+  position: relative;
+  z-index: 3;
+}
+
+.form__title {
+  width: 72%;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.2px;
+  color: $accent-dark;
+  text-transform: uppercase;
+  padding-left: 185px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.form__title::before {
+  @include pseudo;
+  width: 140px;
+  height: 1px;
+  background-color: $bgr-color;
+  left: 25px;
+  top: 65%;
+  z-index: 10;
+}
+
+.form__text {
+  width: 26%;
+  @include text;
+  color: $bgr-color;
+  padding: 0;
+  margin: 0;
+  padding-left: 185px;
+  position: relative;
+}
+
+.form__text::before {
+  @include pseudo;
+  width: 44px;
+  height: 4px;
+  background-color: $accent-dark;
+  left: 120px;
+  top: 7%;
+}
+
+@media (max-width: 1440px) {
+  .form__wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form__text {
+    width: 40%;
+  }
+}
+
+@media (max-width: 769px) {
+  .form__title {
+    font-size: 34px
+  }
+}
+
+@media (max-width: 425px) {
+  .form__wrapper {
+    width: 100%;
+  }
+
+  .form__title,
+  .form__text {
+    padding-left: 10px;
+    width: 95%;
+  }
+
+  .form__title::before,
+  .form__text::before {
+    display: none;
+  }
+
+
+}

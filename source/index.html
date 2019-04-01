@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Wooder</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="page-header">
@@ -26,9 +27,6 @@
               <a href="" class="main-nav__link">Преимущества</a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="main-nav__link">Достижения</a>
-            </li>
-            <li class="main-nav__item">
               <a href="" class="main-nav__link">Контакты</a>
             </li>
           </ul>
@@ -44,7 +42,7 @@
       </section>
       <section class="product">
         <div class="product__item product__item--left product__item--first">
-          <img src="img/furniture.jpg" alt="" class="product__img product__img--first">
+          <img src="img/furniture2.jpg" alt="" class="product__img product__img--first">
           <div class="product__text product__text--left">
             <h2 class="product__title product__title--left">Furniture</h2>
             <p class="product__descr product__descr--left">Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made
@@ -54,7 +52,7 @@
           </div>
         </div>
         <div class="product__item product__item--right product__item--second">
-          <img src="img/decor.jpg" alt="" class="product__img product__img--second">
+          <img src="img/decor2.jpg" alt="" class="product__img product__img--second">
           <div class="product__text product__text--right">
             <h2 class="product__title product__title--right">Decor</h2>
             <p class="product__descr product__descr--right">We make all types of wooden decor as per design given by Architect,Interior designer, contractor which is suitable your premises.</p>
@@ -63,7 +61,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery-section">
+      <!-- <section class="gallery-section">
         <h1 class="gallery-section__title">Наши работы</h1>
         <div class="gallery-section__filter">
           <ul class="gallery-section__filter-list">
@@ -220,6 +218,16 @@
             </ul>
           </div>
         </section>
+      </section> -->
+      <section class="form">
+        <div class="form__wrapper">
+          <h2 class="form__title">Заказывайте бесплатный замер или расчет стоимости работ</h2>
+          <p class="form__text">This is a team of professionals that make the furniture and
+            wood décor high standard. Creating modern designs.
+            Adhering to the global quality standards. And we are
+            doing work with love.</p>
+          <button class="button button__form">Заказать звонок</button>
+        </div>
       </section>
       <section class="about">
         <img src="img/about.png" alt="" class="about__img">
@@ -249,6 +257,31 @@
       </section>
 
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__text page-footer__text--copyright">&#169; 2019 Wooder</p>
+        <div class="page-footer__contacts">
+          <p class="page-footer__text page-footer__text--design">г. Лида, ул. Кирова, 27 оф. 15</p>
+          <p class="page-footer__text page-footer__text--design">info@companyname.by</p>
+          <p class="page-footer__text page-footer__text--design">+375 29 123 45 67</p>
+    </footer>
+    <section class="modal visually-hidden">
+      <div class="modal__container">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Заказать звонок</h2>
+          <form class="modal__form" action="index.html" method="post">
+            <p class="modal__item modal__item--name">
+              <input id="name" class="modal__input modal__input--name" type="text" name="name" placeholder="Ваше имя">
+            </p>
+            <p class="modal__item modal__item--phone">
+              <input id="phone" class="modal__input modal__input--phone" type="text" name="phone"
+                placeholder="+375 __ - ___ - __ - __">
+            </p>
+          </form>
+          <button class="button modal__button" type="button">Заказать звонок</button>
+        </div>
+      </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.filterizr.min.js"></script>
     <script src="js/script.js"></script>

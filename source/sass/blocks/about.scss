@@ -57,3 +57,20 @@
   left: -75px;
   top: 10%;
 }
+
+@media (max-width: 425px) {
+  .about__img,
+  .about__title::before,
+  .about__descr::before {
+    display: none;
+  }
+
+  .about__text {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .about__title {
+    text-align: center;
+  }
+}

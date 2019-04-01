@@ -18,5 +18,33 @@
 
 .button__slide {
   margin-left: -13%;
-  margin-bottom: 520px;
+  margin-bottom: 320px;
+  position: relative;
+  z-index: 3;
+}
+
+.button__form {
+  margin: 40px 0 90px 185px;
+}
+
+@media (max-width: 1024px) {
+  .button {
+    width: 30%;
+  }
+
+  .button__form {
+    width: 30%;
+  }
+}
+
+@media (max-width: 425px) {
+  .button__form {
+    margin: 40px 0 90px 10px;
+    width: 65%;
+  }
+
+  .button {
+    width: 65%;
+  }
+
 }
